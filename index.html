@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA Visualizer – Ôn tập Cấu trúc dữ liệu & Giải thuật</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="brand" onclick="location.hash=''">
+        <div class="logo">⟨/⟩</div>
+        <div>
+          <div class="brand-title">DSA Visualizer</div>
+          <div class="brand-sub">Ôn tập CTDL &amp; GT · HCMUT</div>
+        </div>
+      </div>
+      <div class="search-box">
+        <input id="nav-search" type="search" placeholder="Tìm giải thuật… (Ctrl+K)">
+      </div>
+      <nav id="nav"></nav>
+      <div class="sidebar-foot">
+        <button id="theme-toggle" class="btn ghost small" title="Đổi giao diện sáng/tối">🌓 Giao diện</button>
+        <button id="help-btn" class="btn ghost small" title="Phím tắt">⌨ Phím tắt</button>
+      </div>
+    </aside>
+
+    <main id="main">
+      <button id="menu-btn" class="btn ghost small" title="Menu">☰</button>
+      <div id="view"></div>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button class="modal-close" onclick="document.getElementById('modal').classList.add('hidden')">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Core -->
+  <script src="js/core/core.js"></script>
+  <script src="js/core/highlight.js"></script>
+  <script src="js/core/renderers.js"></script>
+  <script src="js/core/app.js"></script>
+
+  <!-- Algorithms (order = order in sidebar) -->
+  <script src="js/algos/sorting.js"></script>
+  <script src="js/algos/searching.js"></script>
+  <script src="js/algos/hashing.js"></script>
+  <script src="js/algos/tree.js"></script>
+  <script src="js/algos/heap.js"></script>
+  <script src="js/algos/avl.js"></script>
+  <script src="js/algos/splay.js"></script>
+  <script src="js/algos/btree.js"></script>
+  <script src="js/algos/graph.js"></script>
+  <script src="js/algos/graph2.js"></script>
+  <script src="js/algos/bitwise.js"></script>
+  <script src="js/algos/icpc-math.js"></script>
+  <script src="js/algos/icpc-dp.js"></script>
+  <script src="js/algos/icpc-string.js"></script>
+
+  <script>DSA.start();</script>
+</body>
+</html>
